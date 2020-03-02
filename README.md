@@ -8,13 +8,13 @@ Integrantes:
 <li>Daniel David Leal Lara - 20151020057</li>
 </ol>
 
-# DOCKER RSS
+# Docker RSS
 
 RSS es un formato XML para distribuir contenido en la web. Se utiliza para difundir información actualizada frecuentemente a usuarios que se han suscrito a la fuente de contenidos. RSS es un instrumento de vigilancia tecnológica, específicamente una Alerta, o sea, servicios personalizados de información de actualidad sobre aspectos concretos de un sector o temática.
 
 Esta imagen de docker permite ejecutar el lector de noticias "Tiny Tiny RSS", el cual permite, por medio de una interfaz web, registrarse a una dirección RSS de una organización de interés y recibir actualizaciones de las últimas noticias disponibles.
 
-## INSTALACIÓN
+## Instalación
 
 Es necesario tener instalado docker, por lo tanto si no lo tiene instalado dentro de su maquina y usa ubuntu, es recomendable seguir las siguientes instrucciones: </br>
 https://docs.docker.com/install/linux/docker-ce/ubuntu/ </br>
