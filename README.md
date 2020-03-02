@@ -34,3 +34,18 @@ $ docker run -d --link ttrssdb:db -p 80:80 clue/ttrss
 ```
 Al ejecutar este comando por primera vez se descargará la imagen automáticamente del
 índice de imágenes verificadas de docker.
+
+## Acceso a la Aplicación
+
+La instalación anterior expone a la interfaz web de Tiny Tiny RSS en el puerto 80, por lo que debe
+abrir el navegador web de su preferencia y acceder a la siguiente dirección:
+
+http://localhost/
+
+Las credenciales por defecto son:
+
+    Username: admin
+    Password: password
+
+## Créditos
+El repositorio original se encuentra en (https://github.com/clue/docker-ttrss)
