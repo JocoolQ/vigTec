@@ -1,4 +1,4 @@
-# Aplicación Vigilancia Tecnológica - RSS
+# Aplicación Vigilancia Tecnológica - Alertas RSS
 
 Gestión Tecnológica - 2019-3
 Integrantes: 
@@ -8,35 +8,18 @@ Integrantes:
 <li>Daniel David Leal Lara - 20151020057</li>
 </ol>
 
-Es necesario tener instalado docker, por lo tanto si no lo tiene instalado dentro de su maquina y usa ubuntu, es recomendable seguir las siguientes instrucciones: </br>
-https://docs.docker.com/install/linux/docker-ce/ubuntu/ </br>
+# DOCKER RSS
 
-</br>
-</br>
-Para ejecutar la aplicación dockerizada es necesario seguir los siguientes pasos dentro de la terminal:
-<ol>
+RSS es un formato XML para distribuir contenido en la web. Se utiliza para difundir información actualizada frecuentemente a usuarios que se han suscrito a la fuente de contenidos. RSS es un instrumento de vigilancia tecnológica, específicamente una Alerta, o sea, servicios personalizados de información de actualidad sobre aspectos concretos de un sector o temática.
 
-# docker-ttrss
-
-Esta imagen de docker permite ejecutar el lector de noticias "Tiny Tiny RSS"
-This [Docker](https://www.docker.com) image allows you to run the [Tiny Tiny RSS](http://tt-rss.org) feed reader.
-Keep your feed history to yourself and access your RSS and atom feeds from everywhere.
-You can access it through an easy to use webinterface on your desktop, your mobile browser
-or using one of the available apps.
-
-## About Tiny Tiny RSS
-
-> *From [the official readme](http://tt-rss.org/redmine/projects/tt-rss/wiki):*
-
-Tiny Tiny RSS is an open source web-based news feed (RSS/Atom) reader and aggregator,
-designed to allow you to read news from any location,
-while feeling as close to a real desktop application as possible.
-
-![](http://tt-rss.org/images/1.9/1.jpg)
+Esta imagen de docker permite ejecutar el lector de noticias "Tiny Tiny RSS", el cual permite, por medio de una interfaz web, registrarse a una dirección RSS de una organización de interés y recibir actualizaciones de las últimas noticias disponibles.
 
 ## INSTALACIÓN
 
-Primero se inicializa un nuevo contenedor de la base de datos postgres:
+Es necesario tener instalado docker, por lo tanto si no lo tiene instalado dentro de su maquina y usa ubuntu, es recomendable seguir las siguientes instrucciones: </br>
+https://docs.docker.com/install/linux/docker-ce/ubuntu/ </br>
+
+Se inicializa un nuevo contenedor de la base de datos postgres:
 
 ```bash
 $ docker run -d --name ttrssdb nornagon/postgres
