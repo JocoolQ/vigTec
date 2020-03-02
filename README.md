@@ -1,3 +1,22 @@
+# 21
+Aplicación de herramientas de automatización para pruebas de comportamiento a partir de cucumber
+
+Gestión Tecnológica - 2019-3
+Integrantes: 
+<ol>
+<li>Thomas Daniel Avila Blenkey  -  20151020012</li> 
+<li>Jonathan Steven Capera Quintana - 20151020001</li> 
+<li>Daniel David Leal Lara - 20151020057</li>
+</ol>
+
+Es necesario tener instalado docker, por lo tanto si no lo tiene instalado dentro de su maquina y usa ubuntu, es recomendable seguir las siguientes instrucciones: </br>
+https://docs.docker.com/install/linux/docker-ce/ubuntu/ </br>
+
+</br>
+</br>
+Para ejecutar la aplicación dockerizada es necesario seguir los siguientes pasos dentro de la terminal:
+<ol>
+
 # docker-ttrss
 
 This [Docker](https://www.docker.com) image allows you to run the [Tiny Tiny RSS](http://tt-rss.org) feed reader.
