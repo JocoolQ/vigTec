@@ -1,5 +1,4 @@
-# 21
-Aplicación de herramientas de automatización para pruebas de comportamiento a partir de cucumber
+# Aplicación Vigilancia Tecnológica - RSS
 
 Gestión Tecnológica - 2019-3
 Integrantes: 
@@ -19,6 +18,7 @@ Para ejecutar la aplicación dockerizada es necesario seguir los siguientes paso
 
 # docker-ttrss
 
+Esta imagen de docker permite ejecutar el lector de noticias "Tiny Tiny RSS"
 This [Docker](https://www.docker.com) image allows you to run the [Tiny Tiny RSS](http://tt-rss.org) feed reader.
 Keep your feed history to yourself and access your RSS and atom feeds from everywhere.
 You can access it through an easy to use webinterface on your desktop, your mobile browser
@@ -34,22 +34,20 @@ while feeling as close to a real desktop application as possible.
 
 ![](http://tt-rss.org/images/1.9/1.jpg)
 
-## Quickstart
+## INSTALACIÓN
 
-This section assumes you want to get started quickly, the following sections explain the
-steps in more detail. So let's start.
-
-Just start up a new database container:
+Primero se inicializa un nuevo contenedor de la base de datos postgres:
 
 ```bash
 $ docker run -d --name ttrssdb nornagon/postgres
 ```
 
-And because this docker image is available as a [trusted build on the docker index](https://index.docker.io/u/clue/ttrss/),
-using it is as simple as launching this Tiny Tiny RSS installation linked to your fresh database:
+Al ser un docker verificado en el índice (https://index.docker.io/u/clue/ttrss/) se puede
+ejecutar fácilmente iniciando esta instalación de RSS vinculada a la base de datos
+creada anteriormente: 
 
 ```bash
 $ docker run -d --link ttrssdb:db -p 80:80 clue/ttrss
 ```
-
-Running this command for the first time will download the image automatically.
+Al ejecutar este comando por primera vez se descargará la imagen automáticamente del
+índice de imágenes verificadas de docker.
